@@ -113,9 +113,8 @@ function attachEvents() {
         btn.addEventListener('click', (e) => {
             const fileName = btn.getAttribute('data-file');
             if (fileName) {
-                const downloadUrl = `https://github.com/ramaduka24-pixel/website/raw/main/${fileName}`;
                 showToast(`✅ Загрузка ${fileName} началась...`);
-                window.location.href = downloadUrl;
+                window.location.href = `https://github.com/ramaduka24-pixel/website/raw/main/${fileName}`;
             } else {
                 showToast(`❌ Ошибка: файл не найден`);
             }
